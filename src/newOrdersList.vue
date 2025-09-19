@@ -131,7 +131,6 @@ const handleSearch = (event: any) => {
     setTimeout(() => {
       const filteredOrders = allOrders.value.filter((order) => {
         return (
-          order.placed_at.includes(searchValue.value) ||
           order.total_price.toString().includes(searchValue.value)
         );
       });
@@ -220,7 +219,7 @@ const handleAddOrder = async () => {
         <input
           type="text"
           name="search"
-          placeholder="search by price, date"
+          placeholder="search by price"
           @input="handleSearch"
         />
       </div>
