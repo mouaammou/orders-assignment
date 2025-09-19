@@ -29,7 +29,7 @@ Update the database URL in your PHP seeding script:
 $firebase = (new Factory)->withServiceAccount(__DIR__. "/serviceAccount.json")->withDatabaseUri("https://youre url");
 ```
 
-> **Note:** Replace these configurations with your own Firebase project settings.
+> **Note:** Replace these configurations with your own Firebase project settings and add serviceAccount.json to the php folder.
 
 ## Setup & Run (Frontend - Vue.js)
 
@@ -44,7 +44,6 @@ npm run dev
 
 ```bash
 cd php
-touch serviceAccount.json
 composer install
 php seedOrders.php 10
 ```
