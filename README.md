@@ -10,7 +10,6 @@ Includes a PHP seeding script to generate dummy orders.
 - Firebase project with Realtime Database enabled
 - Service account JSON file (serviceAccount.json)
 
-> **Note:** I'm including my Firebase service account for testing purposes. You can replace it with your own before deploying.
 
 ## Setup & Run (Frontend - Vue.js)
 
