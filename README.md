@@ -12,7 +12,7 @@ Includes a PHP seeding script to generate dummy orders.
 
 ## Configuration
 
-### Firebase Frontend Config
+### For Vue.js Frontend
 Update your Firebase configuration in `src/services/firebase.ts`:
 
 ```javascript
@@ -21,15 +21,14 @@ const firebaseConfig = {
 };
 ```
 
-### PHP Script Database URL
-Update the database URL in your PHP seeding script:
+### For PHP Backend
+1. Place your `serviceAccount.json` file in the php folder
+2. Update the database URL in your PHP seeding script:
 
 ```php
 // ==> init the firebase
 $firebase = (new Factory)->withServiceAccount(__DIR__. "/serviceAccount.json")->withDatabaseUri("https://youre url");
 ```
-
-> **Note:** Replace these configurations with your own Firebase project settings and add serviceAccount.json to the php folder.
 
 ## Setup & Run (Frontend - Vue.js)
 
@@ -48,5 +47,5 @@ composer install
 php seedOrders.php 10
 ```
 
-Add your serviceAccount JSON from Firebase.
+Add your serviceAccount JSON from You're Firebase.
 This will insert 10 random orders into Firebase with status "new".
