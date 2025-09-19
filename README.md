@@ -21,7 +21,7 @@ npm run dev
 ```
 
 
-## 🗄️ Seeding Orders (PHP Script)
+## Seeding Orders (PHP Script)
 
 ```bash
 cd php
@@ -30,5 +30,5 @@ composer install
 php seedOrders.php 10
 ```
 
-Add youre serviceAccount json from firebase.
+Add You're serviceAccount json from firebase. 
 This will insert 10 random orders into Firebase with status "new".
