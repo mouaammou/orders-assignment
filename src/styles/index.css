@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --color-done-color: #f54e1e;
+}
+
+* { 
+  font-family: sans-serif;
+}
+
+button {
+  @apply cursor-pointer p-1 mx-1 rounded-md bg-done-color text-white
+}
+
+li {
+  @apply border border-gray-300 my-2 p-2 rounded-md max-w-96
+}
+
+.search {
+  @apply flex justify-between my-2
+}
+
+ input {
+  @apply border-1 border-gray-300 px-3 py-1 rounded-md
+}
+label {
+  @apply mx-3
+}
+
+.orders-container {
+  @apply flex justify-around items-center  flex-wrap
+}
+
+.pagination {
+  @apply flex w-full justify-between my-3;
+}
+
+.mark_cancelled {
+  @apply bg-gray-300 text-gray-600
+}
+
+.title {
+  @apply bg-done-color capitalize text-center font-bold text-xl p-2 rounded-md text-white;
+}
+
+.order-item > div {
+  @apply my-2
+}
+.order-item span {
+  @apply bg-gray-300 rounded-md px-1 py-1;
+}
+
+.order-form-action {
+  @apply text-gray-500 text-3xl absolute top-1 right-1 bg-white px-3 rounded-xl cursor-pointer
+}
+
+.order-form {
+  @apply absolute top-0 right-0 z-50 bg-gray-700 text-white w-full max-w-[30rem] mx-auto h-fit p-4 rounded-md space-y-3;
+}
